@@ -1,6 +1,4 @@
-GO
-
-/****** Object:  View [RDS].[vwSignificantDisproportionality_Membership]    Script Date: 2/27/2024 12:19:30 PM ******/
+/****** Object:  View [RDS].[vwSignificantDisproportionality_Membership]    Script Date: 6/12/2024 9:08:38 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,12 +8,7 @@ GO
 
 
 
-
-
-
-
-
-ALTER VIEW [RDS].[vwSignificantDisproportionality_Membership] AS
+CREATE VIEW [RDS].[vwSignificantDisproportionality_Membership] AS
   
 
 --================================================================================================
@@ -40,17 +33,15 @@ AS
  		FROM		RDS.FactK12StudentCounts			Fact
 		JOIN		RDS.DimSchoolYears					SchoolYears			ON Fact.SchoolYearId			= SchoolYears.DimSchoolYearId	
 		LEFT JOIN	RDS.DimAges							Ages				ON Fact.AgeId					= Ages.DimAgeId      
-		INNER JOIN	RDS.DimGradeLevels					Grades				ON Fact.GradeLevelId			= Grades.DimGradeLevelId
-		INNER JOIN	RDS.DimLeas							LEAs				ON Fact.LeaId					= LEAs.DimLeaId
+		LEFT JOIN	RDS.DimGradeLevels					Grades				ON Fact.GradeLevelId			= Grades.DimGradeLevelId
+		LEFT JOIN	RDS.DimLeas							LEAs				ON Fact.LeaId					= LEAs.DimLeaId
 
 		WHERE 1 = 1
 		AND Fact.FactTypeId = 6
-		AND Fact.SeaId <> -1
-		AND Fact.LeaId <> -1
-		AND Fact.K12SchoolId <> -1
-		AND Ages.AgeValue >= 3 and Ages.AgeValue <= 21
-		AND Grades.GradeLevelEdFactsCode in ('UG', 'AE','PK','KG','01','02','03','04','05','06','07','08','09','10','11','12')  
 		
+		AND Ages.AgeValue >= 3 and Ages.AgeValue <= 21
+		AND Grades.GradeLevelEdFactsCode in ('UG', 'AE','PK','KG','01','02','03','04','05','06','07','08','09','10','11','12', '13')  
+		--and SchoolYear = 2023
 
 	
 	)
@@ -58,7 +49,6 @@ AS
 	SELECT	*
 			
 	FROM	MembershipData			AS membership
-
 GO
 
 

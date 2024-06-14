@@ -1,6 +1,4 @@
-GO
-
-/****** Object:  View [RDS].[vwSignificantDisproportionality_C006]    Script Date: 2/27/2024 12:07:38 PM ******/
+/****** Object:  View [RDS].[vwSignificantDisproportionality_C006]    Script Date: 6/12/2024 8:59:51 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,7 +7,9 @@ GO
 
 
 
-ALTER VIEW [RDS].[vwSignificantDisproportionality_C006] AS
+
+
+CREATE VIEW [RDS].[vwSignificantDisproportionality_C006] AS
 
 --================================================================================================
 -- Discipline
@@ -41,17 +41,17 @@ AS
 					,SeaId
 		FROM   		RDS.FactK12StudentDisciplines	Fact
 		JOIN		RDS.DimSchoolYears				SchoolYears		ON Fact.SchoolYearId		= SchoolYears.DimSchoolYearId	
-		INNER JOIN  rds.DimPeople					rdp				on fact.K12StudentId		= rdp.DimPersonId
-		INNER JOIN  RDS.DimLeas                     LEAs            ON Fact.LeaId               = LEAs.DimLeaId
-		INNER JOIN  RDS.DimK12Schools               Schools         ON Fact.K12SchoolId         = Schools.DimK12SchoolId
-		INNER JOIN  RDS.DimIdeaStatuses				rdis 			ON fact.IdeaStatusId		= rdis.DimIdeaStatusId
+		LEFT JOIN  rds.DimPeople					rdp				on fact.K12StudentId		= rdp.DimPersonId
+		LEFT JOIN  RDS.DimLeas                     LEAs            ON Fact.LeaId               = LEAs.DimLeaId
+		LEFT JOIN  RDS.DimK12Schools               Schools         ON Fact.K12SchoolId         = Schools.DimK12SchoolId
+		LEFT JOIN  RDS.DimIdeaStatuses				rdis 			ON fact.IdeaStatusId		= rdis.DimIdeaStatusId
 		LEFT JOIN   RDS.DimAges                     Ages            ON Fact.AgeId               = Ages.DimAgeId      
 		LEFT JOIN   RDS.DimRaces                    Races           ON Fact.RaceId              = Races.DimRaceId
 		LEFT JOIN  RDS.DimIdeaDisabilityTypes		IDEADisability  ON Fact.PrimaryDisabilityTypeId = IDEADisability.DimIdeaDisabilityTypeId
-		INNER JOIN rds.DimDisciplineStatuses		rdds 			ON fact.DisciplineStatusId = rdds.DimDisciplineStatusId
-		WHERE 1 = 1
-		AND Fact.SeaId <> -1
-		AND Fact.LeaId <> -1
+		LEFT JOIN rds.DimDisciplineStatuses		rdds 			ON fact.DisciplineStatusId = rdds.DimDisciplineStatusId
+		WHERE 1 = 1		
+		--AND Fact.SeaId <> -1
+		--AND Fact.LeaId <> -1
 		AND Fact.K12SchoolId <> -1 
 		AND rdis.IdeaEducationalEnvironmentForSchoolAgeCode <> 'PPPS' --**
 		AND rdis.IdeaEducationalEnvironmentForSchoolAgeCode  <> 'PPPS'
@@ -131,7 +131,6 @@ AS
 
 	SELECT		*
 	FROM		StudentC006			AS c006
-					
 GO
 
 

@@ -1,6 +1,4 @@
-GO
-
-/****** Object:  View [RDS].[vwSignificantDisproportionality_C143]    Script Date: 2/27/2024 12:11:44 PM ******/
+/****** Object:  View [RDS].[vwSignificantDisproportionality_C143]    Script Date: 6/12/2024 9:04:30 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,7 +8,9 @@ GO
 
 
 
-ALTER VIEW [RDS].[vwSignificantDisproportionality_C143] AS
+
+
+CREATE VIEW [RDS].[vwSignificantDisproportionality_C143] AS
 
 --================================================================================================
 -- Discipline
@@ -42,18 +42,16 @@ SELECT		 Fact.K12StudentId
 					,SeaId
 		FROM   		RDS.FactK12StudentDisciplines	Fact
 		JOIN		RDS.DimSchoolYears				SchoolYears		ON Fact.SchoolYearId		= SchoolYears.DimSchoolYearId	
-		INNER JOIN  rds.DimPeople					rdp				on fact.K12StudentId		= rdp.DimPersonId
-		INNER JOIN  RDS.DimLeas                     LEAs            ON Fact.LeaId               = LEAs.DimLeaId
-		INNER JOIN  RDS.DimK12Schools               Schools         ON Fact.K12SchoolId         = Schools.DimK12SchoolId
-		INNER JOIN  RDS.DimIdeaStatuses				rdis 			ON fact.IdeaStatusId		= rdis.DimIdeaStatusId
+		LEFT JOIN  rds.DimPeople					rdp				on fact.K12StudentId		= rdp.DimPersonId
+		LEFT JOIN  RDS.DimLeas                     LEAs            ON Fact.LeaId               = LEAs.DimLeaId
+		LEFT JOIN  RDS.DimK12Schools               Schools         ON Fact.K12SchoolId         = Schools.DimK12SchoolId
+		LEFT JOIN  RDS.DimIdeaStatuses				rdis 			ON fact.IdeaStatusId		= rdis.DimIdeaStatusId
 		LEFT JOIN   RDS.DimAges                     Ages            ON Fact.AgeId               = Ages.DimAgeId      
 		LEFT JOIN   RDS.DimRaces                    Races           ON Fact.RaceId              = Races.DimRaceId
-		INNER JOIN  RDS.DimIdeaDisabilityTypes		IDEADisability  ON Fact.PrimaryDisabilityTypeId = IDEADisability.DimIdeaDisabilityTypeId
-		INNER JOIN rds.DimDisciplineStatuses		rdds 			ON fact.DisciplineStatusId = rdds.DimDisciplineStatusId
+		LEFT JOIN  RDS.DimIdeaDisabilityTypes		IDEADisability  ON Fact.PrimaryDisabilityTypeId = IDEADisability.DimIdeaDisabilityTypeId
+		LEFT JOIN rds.DimDisciplineStatuses		rdds 			ON fact.DisciplineStatusId = rdds.DimDisciplineStatusId
 		WHERE 1 = 1
-		AND Fact.SeaId <> -1
-		AND Fact.LeaId <> -1
-		AND Fact.K12SchoolId <> -1 
+		
 		AND rdis.IdeaEducationalEnvironmentForSchoolAgeCode <> 'PPPS'
 			and rdis.IdeaIndicatorEdFactsCode = 'IDEA'
 			and (rdds.DisciplineMethodOfChildrenWithDisabilitiesCode <> 'MISSING'
@@ -104,9 +102,7 @@ AS
 	)
 
 	SELECT		*
-	FROM		LEAC143			AS c143 
-	
-					
+	FROM		LEAC143			AS c143
 GO
 
 
