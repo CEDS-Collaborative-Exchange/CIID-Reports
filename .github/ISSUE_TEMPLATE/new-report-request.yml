@@ -1,0 +1,50 @@
+name: Suggest a New Report
+description: Propose a new PowerBI report or improvement for the CIID-Reports project.
+title: "[New Report]: "
+labels: ["enhancement", "report request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Suggest a New Report  
+        Share your idea for a new PowerBI report or an enhancement to an existing one.
+
+  - type: textarea
+    id: report-description
+    attributes:
+      label: Report Description
+      description: Clearly describe the new report or improvement you’d like to see.
+      placeholder: Provide a detailed description of the report.
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain how this report will be used and its potential impact.
+      placeholder: Describe the problem or opportunity this report addresses.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent or important is this report?
+      options:
+        - Low
+        - Medium
+        - High
+      default: 1 # Medium is the second option (index starts at 0)
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Context
+      description: Add any relevant information, links, or screenshots related to this report.
+      placeholder: Include related data, mockups, or references here.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct.
+          required: true
