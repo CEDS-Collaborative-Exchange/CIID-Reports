@@ -35,7 +35,7 @@ Please note that the data presented here is fictitious and for illustrative purp
 {% endhint %}
 
 {% embed url="https://app.powerbi.com/view?r=eyJrIjoiMDVjNDM5ZWQtZGJmOS00ZjI3LWJiZTAtYzI1NDU0NDIyZGYwIiwidCI6IjdhNDE5MjVlLWY2OTctNGY3Yy1iZWMzLTA0NzA4ODdhYzc1MiIsImMiOjF9" %}
-Embedded PowerBI Report: Significant Disproportionality Analysis
+Embedded Power BI Report: Significant Disproportionality Analysis
 {% endembed %}
 
 ### **Features**

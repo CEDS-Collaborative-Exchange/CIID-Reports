@@ -42,7 +42,7 @@ layout:
 
 The Significant Disproportionality report uses stored views of data in the Reporting Tables. These views are not standard but can be added to your instance of Generate’s semantic layer easily. This process does not require any server backups.
 
-Generate Significant Disproportionality views were developed to represent the data used for Child Count, Membership, Placement, and Discipline data in C006 and C143 IDEA reports. These files were developed using Generate 11.3 released in early 2024 and they use the same logic for returning the IDEA submission report results. The views contain fact and dimension table ids that are joined with other fact and dimension tables within the data warehouse to return other data elements used within the BI report.
+Generate Significant Disproportionality views were developed to represent the data used for Child Count, Membership, Placement, and Discipline data in C006 and C143 IDEA reports. These files were developed using Generate 12.3 released in early 2025 and they use the same logic for returning the IDEA submission report results. The views contain fact and dimension table ids that are joined with other fact and dimension tables within the data warehouse to return other data elements used within the BI report.
 
 #### **The Required views are:**
 
@@ -223,11 +223,7 @@ The downloaded report contains cached test data. This test data was created by C
    * Placement Tables
    * Reference Table Tables
 
-<div data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/SigDispro_Setup_Reference_Tables.png" alt="Screenshot of the Power Query interface in Microsoft Excel. The image shows expanded query folders named ‘Identification Tables’, ‘Discipline Tables’, ‘Placement Tables’, and ‘Reference Table Tables’. Red arrows emphasize the need to link these tables to a CEDS Data Warehouse for accurate report data sourcing."><figcaption><p>Connecting Power Query Tables to CEDS Data Warehouse</p></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/SigDispro_Setup_Reference_Tables.png" alt="Screenshot of the Power Query interface in Microsoft Excel. The image shows expanded query folders named ‘Identification Tables’, ‘Discipline Tables’, ‘Placement Tables’, and ‘Reference Table Tables’. Red arrows emphasize the need to link these tables to a CEDS Data Warehouse for accurate report data sourcing."><figcaption><p>Connecting Power Query Tables to CEDS Data Warehouse</p></figcaption></figure></div>
 
 5. Click on each table, and then select the advanced editor.
 
@@ -301,3 +297,43 @@ Online Workspace: Go to the semantic model and click the refresh button.  &#x20;
 <figure><img src="../../.gitbook/assets/SigDispro_Setup_Refreshing_Workspace.jpg" alt=""><figcaption><p>Refreshing the Semantic Model in the Sig Dispro Test Workspace.</p></figcaption></figure>
 
 ***
+
+### Adjusting Years
+
+By default, the report loads the latest three years of data. However, depending on when you access the report, some files' data may appear blank. If this happens, it may be helpful to load the previous three years _excluding_ the current year.
+
+To adjust the report to view the previous three years (excluding the current year), follow these steps:
+
+{% stepper %}
+{% step %}
+### Open the report in Power BI Desktop
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Under the 'Home' tab, click the table icon then 'Transform data' to take you to the Power Query page.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### In the left-hand panel under the 'Parameters' section, select the 'YearSelection' parameter.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Under the 'Current Value' dropdown, select 'Latest 3 years minus latest year'.
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+
+{% endstep %}
+
+{% step %}
+### Click 'Close & Apply'
+
+
+{% endstep %}
+{% endstepper %}
