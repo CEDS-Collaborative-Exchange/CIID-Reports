@@ -1,6 +1,6 @@
 # Setup Guide
 
-**Privacy Notice:** This report is intended for public release. Please ensure all necessary quality assurance checks and suppression testing are completed prior to publication.
+**Privacy Notice:** This report is intended for public release. Please ensure that suppression thresholds and functionality are aligned with your state’s policy and all necessary quality assurance checks and testing are completed prior to publication.
 
 ***
 
@@ -49,7 +49,7 @@ Remember to connect to the VPN if required by your network administrators.
 2. Open the .pbix file in Power BI Desktop.
 
 {% hint style="info" %}
-The downloaded report contains cached **test** data. This test data was created for this report's production and is not intended to represent any actual state data.
+The downloaded report contains cached **test** data. This test data was created for this report's demonstration and is not intended to represent any actual state data.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
@@ -60,11 +60,11 @@ The downloaded report contains cached **test** data. This test data was created 
 
 4. In the "Data source settings" panel, select the default data source then click "Change Source...".
 
-<figure><img src="../.gitbook/assets/data source settings 4.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pic.png" alt=""><figcaption></figcaption></figure>
 
 5. In the "SQL Server database" panel, replace the "Server" and "Database" fields with your organization's credentials. Click 'OK' when finished.
 
-<figure><img src="../.gitbook/assets/data source settings 5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pic 3.png" alt=""><figcaption></figcaption></figure>
 
 ### Distribution
 
@@ -86,7 +86,7 @@ While the .pbix can be sent to individuals with Power BI Desktop, it is recommen
 
 3. Click "+ New Workspace" then fill out the required fields. Select "Apply" when finished.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pic6.png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. To import the report into the newly created workspace, select "Import" then "Report or Paginated Report". Then select your .pbix file from the storage options listed.
 
@@ -140,7 +140,7 @@ Next, click the 'Themes' dropdown. Then select the 'Customize current theme' opt
 {% step %}
 In the pop-up panel, change the primary colors to your state's theme colors and click 'Apply'.&#x20;
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pic8.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -150,7 +150,7 @@ Click save in the top left corner then publish your changes to your workspace.&#
 
 ### Data Suppression
 
-To protect individual privacy, all visuals in the reports have cell sizes under 10 suppressed. There are no drilldown features, as all personally identifiable data (PII) have been removed.
+To protect individual privacy, all visuals in the reports have cell sizes under 10 suppressed. Suppressing one category may suppress another depending on the total counts. There are no drilldown features, as all personally identifiable data (PII) have been removed.
 
 To adjust cell sizes, please refer to the [Data Dictionary](data-dictionary.md) to identify the measures in the report that define suppression levels.
 

@@ -17,7 +17,7 @@ This report uses four years of state assessment **test** data for mathematics, r
 3. **Science:** Provides insights into science assessment outcomes, participation rates, and accommodations for students with disabilities.
 
 {% hint style="warning" %}
-Please note that the data presented here is fictitious and for illustrative purposes only. Click full screen mode in the bottom right corner for optimal viewing.&#x20;
+Please note that the data presented in the report is fictitious and for illustrative purposes only. Click full screen mode in the bottom right corner for optimal viewing.&#x20;
 {% endhint %}
 
 {% embed url="https://app.powerbi.com/view?r=eyJrIjoiNWY0NGQyYjgtMzQ3Zi00NzllLWE2NTUtMTNjNmViYjgzMTRiIiwidCI6IjdhNDE5MjVlLWY2OTctNGY3Yy1iZWMzLTA0NzA4ODdhYzc1MiIsImMiOjF9" %}
@@ -32,13 +32,13 @@ To protect individual privacy, all visuals in the reports have cell sizes under 
 
 #### Adjustable Filters
 
-<figure><img src="../.gitbook/assets/Presentation1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Presentation1.gif" alt=""><figcaption><p>Filters button reveals slicer panel. Slicer selections show in the 'Filters Applied' panel in the top navigation bar. </p></figcaption></figure>
 
 #### Keyboard Shortcuts
 
 Pressing "Shift + ?" will enable a pop-up that shows several different keyboard shortcuts and accessibility features.
 
-<figure><img src="../.gitbook/assets/Presentation3.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Presentation3.gif" alt=""><figcaption><p>Hover over shortcut button to reveal instructions for navigation shortcuts. </p></figcaption></figure>
 
 
 

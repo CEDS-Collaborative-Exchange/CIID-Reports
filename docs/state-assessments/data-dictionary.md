@@ -9,8 +9,12 @@ description: >-
 
 <figure><img src="../.gitbook/assets/Capture.PNG" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="96">Type</th><th width="411">Calculation Name</th><th width="151.9998779296875" align="center">Connected Visuals</th><th width="179.3333740234375">Description</th><th width="800">DAX Code</th></tr></thead><tbody><tr><td>Measure</td><td>AssessmentParticipatingK12IdeaPercentREDACTED</td><td align="center">1</td><td>Calculation for the percent of IDEA students who participated in the state assessment. Value is suppressed for count of participating IDEA students less than 10. </td><td><p></p><pre class="language-dax"><code class="lang-dax">AssessmentParticipatingK12IdeaPercentREDACTED = 
-VAR AssessmentParticipatingK12IdeaCount =
+To access the downloadable excel file, access the gitHub link below:
+
+{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/tree/main/assessments" %}
+
+<table><thead><tr><th width="100">Type</th><th width="411">Calculation Name</th><th width="151.9998779296875" align="center">Connected Visuals</th><th width="179.3333740234375">Description</th><th width="800">DAX Code</th></tr></thead><tbody><tr><td>Measure</td><td>AssessmentParticipatingK12IdeaPercentREDACTED</td><td align="center">1</td><td>Calculation for the percent of IDEA students who participated in the state assessment. Value is suppressed for count of participating IDEA students less than 10. </td><td><p></p><pre class="language-dax"><code class="lang-dax"><strong>AssessmentParticipatingK12IdeaPercentREDACTED = 
+</strong>VAR AssessmentParticipatingK12IdeaCount =
     CALCULATE(
         COUNT('2) RDS vwStateAssessments'[K12StudentId]),
         'RDS DimAssessmentRegistrations'[AssessmentRegistrationParticipationIndicatorCode] = "Participated",
