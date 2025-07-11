@@ -15,4 +15,4 @@ This documentation repository is designed to provide educators, administrators, 
 
 #### What You'll Find Here:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><a href="../gitbook-docs/broken-reference/"><strong>Report Guides</strong></a></td><td>Detailed overviews and downloadable files for each report.</td><td></td><td></td></tr><tr><td><a href="../gitbook-docs/broken-reference/"><strong>Community Guides</strong></a></td><td>Learn how you can participate in improving these resources.</td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><a href="broken-reference"><strong>Report Guides</strong></a></td><td>Detailed overviews and downloadable files for each report.</td><td></td><td></td></tr><tr><td><a href="broken-reference"><strong>Community Guides</strong></a></td><td>Learn how you can participate in improving these resources.</td><td></td><td></td></tr></tbody></table>
