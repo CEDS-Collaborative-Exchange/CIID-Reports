@@ -26,13 +26,13 @@ Generate's Assessment view was developed to represent the data used for academic
 
 #### Adding the Views
 
-1. Save the provided script views below:
+1. Save the provided script view below:
 
-{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/tree/main/assessments/SQL%20Views" %}
+{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/blob/main/02)%20assessments/SQL%20Views/vwStateAssessments.txt" visible="true" fullWidth="false" %}
 
-2. Open SQL Management Studio (or similar tool).
-3. Execute the script to add the views to your data warehouse.
-4. If changes are made to field names or values, update the BI tool accordingly.
+1. Open SQL Management Studio (or similar tool).
+2. Execute the script to add the views to your data warehouse.
+3. If changes are made to field names or values, update the BI tool accordingly.
 
 ***
 
@@ -44,9 +44,9 @@ Remember to connect to the VPN if required by your network administrators.
 
 1. Download the ".pbix" report file from the CEDS Collaborative Exchange:
 
-{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/tree/main/assessments" %}
+{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/blob/main/02)%20assessments/Assessments%20Report.pbix" %}
 
-2. Open the .pbix file in Power BI Desktop.
+1. Open the .pbix file in Power BI Desktop.
 
 {% hint style="info" %}
 The downloaded report contains cached **test** data. This test data was created for this report's demonstration and is not intended to represent any actual state data.

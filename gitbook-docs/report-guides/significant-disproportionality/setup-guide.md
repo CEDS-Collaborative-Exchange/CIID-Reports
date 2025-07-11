@@ -160,17 +160,13 @@ vwSignificantDisproportionality_Placement
 
 #### Adding the Views
 
-1. Save the provided script views.&#x20;
+1. Save the provided script views from the [CIID Reports repo](https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/tree/main/01\)%20significant-disproportionality/SQL%20Views):
 
 {% code title="" %}
 ```git
 git clone https://github.com/CEDS-Collaborative-Exchange/CIID-Reports.git
 ```
 {% endcode %}
-
-{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/tree/5bad8914cec558ab7428bad9fd0aab8f962b03a6/significant-disproportionality/SQL%20Views" %}
-
-
 
 1. Open SQL Management Studio (or similar tool).
 2. Execute the script to add the views to your data warehouse.
@@ -190,9 +186,7 @@ Remember to connect to the VPN if required by your network administrators.
 
 1. Download the .pbix file from [CEDS Collaborative Exchange’s GitHub folder](https://github.com/CEDS-Collaborative-Exchange/CIID-Reports).
 
-{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/raw/5bad8914cec558ab7428bad9fd0aab8f962b03a6/significant-disproportionality/Significant%20Disproportionality%20Report.pbix" fullWidth="false" %}
-
-
+{% @github-files/github-code-block url="https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/blob/main/01)%20significant-disproportionality/Significant%20Disproportionality%20Report.pbix" %}
 
 {% hint style="info" %}
 The downloaded report contains cached test data. This test data was created by CIID for this report's production and is not intended to represent any actual state data.&#x20;
