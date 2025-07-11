@@ -4,21 +4,21 @@
 
 ## Report Guides
 
-* [Working with GitHub](report-guides/working-with-github.md)
-* [Significant Disproportionality](report-guides/significant-disproportionality/README.md)
-  * [Setup Guide](report-guides/significant-disproportionality/setup-guide.md)
-  * [Support](report-guides/significant-disproportionality/support.md)
+* [Working with GitHub](../gitbook-docs/report-guides/working-with-github.md)
+* [Significant Disproportionality](../gitbook-docs/report-guides/significant-disproportionality/README.md)
+  * [Setup Guide](../gitbook-docs/report-guides/significant-disproportionality/setup-guide.md)
+  * [Support](../gitbook-docs/report-guides/significant-disproportionality/support.md)
 
 ***
 
-* [State Assessments](state-assessments/README.md)
-  * [Setup Guide](state-assessments/setup-guide.md)
-  * [Data Dictionary](state-assessments/data-dictionary.md)
-  * [Support](state-assessments/support.md)
+* [State Assessments](../gitbook-docs/state-assessments/README.md)
+  * [Setup Guide](../gitbook-docs/state-assessments/setup-guide.md)
+  * [Data Dictionary](../gitbook-docs/state-assessments/data-dictionary.md)
+  * [Support](../gitbook-docs/state-assessments/support.md)
 
 ## Community
 
-* [How to Contribute](community/how-to-contribute.md)
+* [How to Contribute](../gitbook-docs/community/how-to-contribute.md)
 
 ***
 
