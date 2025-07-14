@@ -11,10 +11,10 @@
 
 ***
 
-* [State Assessments](state-assessments/README.md)
-  * [Setup Guide](state-assessments/setup-guide.md)
-  * [Data Dictionary](state-assessments/data-dictionary.md)
-  * [Support](state-assessments/support.md)
+* [IDEA State Assessments](idea-state-assessments/README.md)
+  * [Setup Guide](idea-state-assessments/setup-guide.md)
+  * [Data Dictionary](idea-state-assessments/data-dictionary.md)
+  * [Support](idea-state-assessments/support.md)
 
 ## Community
 
