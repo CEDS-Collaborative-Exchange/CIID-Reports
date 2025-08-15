@@ -2,7 +2,7 @@
 icon: chart-column
 ---
 
-# State Assessments
+# IDEA State Assessments
 
 ### Explore the Report
 
@@ -40,9 +40,9 @@ Pressing "Shift + ?" will enable a pop-up that shows several different keyboard 
 
 <figure><img src="../.gitbook/assets/Presentation3.gif" alt=""><figcaption><p>Hover over shortcut button to reveal instructions for navigation shortcuts. </p></figcaption></figure>
 
+## Webinar
 
-
-
+{% embed url="https://www.youtube.com/watch?v=XqFgjDI0a7I" %}
 
 
 
