@@ -154,5 +154,34 @@ To protect individual privacy, all visuals in the reports have cell sizes under 
 
 To adjust cell sizes, please refer to the [Data Dictionary](data-dictionary.md) to identify the measures in the report that define suppression levels.
 
+### Toggling Report Year Ranges Using a Power BI Parameter
 
+This report uses a Power BI parameter to control which years of data are shown. The year toggle helps prevent the display of incomplete or missing data, as the most recent IDEA reporting year may not yet be available depending on state submission timelines.
 
+**Available Parameter Options**
+
+| Parameter Value                  | Description                                                                                               |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Latest 3 years                   | Loads the 3 latest years including the current year for membership, childcount, and discipline files.     |
+| Latest 3 years minus latest year | Includes the latest 3 years excluding the current year for membership, childcount, and discipline files.  |
+
+Steps
+
+1. Navigate to office.com
+2. Select 'Power BI' from the list of apps
+3. On the left menu bar, select 'Workspaces' -> select your workspace
+4. Inside the workspace, select the ellipses next to the semantic model row
+
+<figure><img src="../.gitbook/assets/Sig Dispro 1.png" alt=""><figcaption></figcaption></figure>
+
+5. Select 'Settings'
+
+<figure><img src="../.gitbook/assets/Sig Dispro 2 (1).png" alt=""><figcaption></figcaption></figure>
+
+6. In the settings page, click the drop down for the 'Parameters' section
+
+<figure><img src="../.gitbook/assets/Sig Dispro 3 (1).png" alt=""><figcaption></figcaption></figure>
+
+7. Finally type either 'Latest 3 years' or 'Latest 3 years minus latest year' depending on desired year range. Click 'Apply'
+
+<figure><img src="../.gitbook/assets/Sig dispro 5.png" alt=""><figcaption></figcaption></figure>
