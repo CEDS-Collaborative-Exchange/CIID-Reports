@@ -154,7 +154,7 @@ To protect individual privacy, all visuals in the reports have cell sizes under 
 
 To adjust cell sizes, please refer to the [Data Dictionary](data-dictionary.md) to identify the measures in the report that define suppression levels.
 
-### Toggling Report Year Ranges Using a Power BI Parameter
+### Report Year Selection Using a Power BI Parameter
 
 This report uses a Power BI parameter to control which years of data are shown. The year toggle helps prevent the display of incomplete or missing data, as the most recent IDEA reporting year may not yet be available depending on state submission timelines.
 
