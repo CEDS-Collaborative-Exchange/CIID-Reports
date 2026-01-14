@@ -154,16 +154,18 @@ To protect individual privacy, all visuals in the reports have cell sizes under 
 
 To adjust cell sizes, please refer to the [Data Dictionary](data-dictionary.md) to identify the measures in the report that define suppression levels.
 
-### Report Year Selection Using a Power BI Parameter
+### Report Year Selection Using Power BI Parameter
 
-This report uses a Power BI parameter to control which years of data are shown. The year toggle helps prevent the display of incomplete or missing data, as the most recent IDEA reporting year may not yet be available depending on state submission timelines.
+This report uses a Power BI parameter to control which years of data are shown. The year toggle helps prevent the display of incomplete or missing data within the data warehouse, as the most recent IDEA reporting year may not yet be available for all required data depending on state submission timelines.&#x20;
+
+\*When using the report, ensure that you understand which data has been migrated into Generate so the correct report year parameters may be chosen.&#x20;
 
 **Available Parameter Options**
 
-| Parameter Value                  | Description                                                                                               |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Latest 3 years                   | Loads the 3 latest years including the current year for membership, childcount, and discipline files.     |
-| Latest 3 years minus latest year | Includes the latest 3 years excluding the current year for membership, childcount, and discipline files.  |
+| Parameter Value                  | Description                                                                                                                        |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Latest 3 years                   | Loads the 3 latest years including the current year (from the data warehouse) for membership, childcount, and discipline files.    |
+| Latest 3 years minus latest year | Includes the latest 3 years excluding the current year (from the data warehouse) for membership, childcount, and discipline files. |
 
 Steps
 
