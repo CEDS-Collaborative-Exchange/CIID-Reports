@@ -278,42 +278,53 @@ Online Workspace: Go to the semantic model and click the refresh button.  &#x20;
 
 ***
 
-### Adjusting Years
+### Report Year Selection Using Power BI Parameter
 
-By default, the report loads the latest three years of data. However, depending on when you access the report, some files' data may appear blank. If this happens, it may be helpful to load the previous three years _excluding_ the current year.
+This report uses a Power BI parameter to control which years of data are shown. The year toggle set in the Power BI Service helps prevent the display of incomplete or missing data within the data warehouse, as the most recent IDEA reporting year may not yet be available for all required data depending on state submission timelines.&#x20;
 
-To adjust the report to view the previous three years (excluding the current year), follow these steps:
+\*When using the report, ensure that you understand which data has been migrated into Generate so the correct report year parameters may be chosen.&#x20;
+
+**Available Parameter Options**
+
+| Parameter Value                  |                                                                                                                                    |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Latest 3 years                   | Loads the 3 latest years including the current year (from the data warehouse) for Membership, Childcount, and Discipline files.    |
+| Latest 3 years minus latest year | Includes the latest 3 years excluding the current year (from the data warehouse) for Membership, Childcount, and Discipline files. |
 
 {% stepper %}
 {% step %}
-### Open the report in Power BI Desktop
-
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+Navigate to office.com.
 {% endstep %}
 
 {% step %}
-### Under the 'Home' tab, click the table icon then 'Transform data' to take you to the Power Query page.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+Select 'Power BI' from the list of apps.
 {% endstep %}
 
 {% step %}
-### In the left-hand panel under the 'Parameters' section, select the 'YearSelection' parameter.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+On the left menu bar, select 'Workspaces' -> select your workspace
 {% endstep %}
 
 {% step %}
-### Under the 'Current Value' dropdown, select 'Latest 3 years minus latest year'.
+Inside the workspace, select the ellipses next to the semantic model row.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-### Click 'Close & Apply'
+Select 'Settings'
 
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
+{% step %}
+In the settings page, click the drop down for the 'Parameters' section.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+Finally type either 'Latest 3 years' or 'Latest 3 years minus latest year' depending on desired year range. Click 'Apply'.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
