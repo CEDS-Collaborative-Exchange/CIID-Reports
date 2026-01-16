@@ -52,19 +52,19 @@ Remember to connect to the VPN if required by your network administrators.
 The downloaded report contains cached **test** data. This test data was created for this report's demonstration and is not intended to represent any actual state data.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Under the Home tab, click the drop down to access the "Data source settings".
 
-<figure><img src="../.gitbook/assets/Data Source settings (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Data Source settings (1).PNG" alt=""><figcaption></figcaption></figure>
 
 4. In the "Data source settings" panel, select the default data source then click "Change Source...".
 
-<figure><img src="../.gitbook/assets/pic.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pic.png" alt=""><figcaption></figcaption></figure>
 
 5. In the "SQL Server database" panel, replace the "Server" and "Database" fields with your organization's credentials. Click 'OK' when finished.
 
-<figure><img src="../.gitbook/assets/pic 3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pic 3.png" alt=""><figcaption></figcaption></figure>
 
 ### Distribution
 
@@ -78,23 +78,23 @@ While the .pbix can be sent to individuals with Power BI Desktop, it is recommen
 
 1. Sign into office.com and select Power BI in the top left menu bar.
 
-<figure><img src="../.gitbook/assets/sign in.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sign in.png" alt=""><figcaption></figcaption></figure>
 
 2. Click "Workspaces" on the left menu bar.
 
-<figure><img src="../.gitbook/assets/left bar.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/left bar.png" alt=""><figcaption></figcaption></figure>
 
 3. Click "+ New Workspace" then fill out the required fields. Select "Apply" when finished.
 
-<figure><img src="../.gitbook/assets/pic6.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pic6.png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. To import the report into the newly created workspace, select "Import" then "Report or Paginated Report". Then select your .pbix file from the storage options listed.
 
-<figure><img src="../.gitbook/assets/screenshot 1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot 1.PNG" alt=""><figcaption></figcaption></figure>
 
 5. The report is now uploaded into your workspace. You can manage permissions, data refresh, and distribution from this workspace.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Data Refresh
 
@@ -104,21 +104,21 @@ Administrators of the report can refresh the data in different ways:
 
 1. Open the .pbix file. In "Home" tab, click the refresh icon.
 
-<figure><img src="../.gitbook/assets/a.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/a.PNG" alt=""><figcaption></figcaption></figure>
 
 2. After refreshing, click "Publish" then select your Power BI workspace. Click "Select".
 
-<figure><img src="../.gitbook/assets/a (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/a (1).PNG" alt=""><figcaption></figcaption></figure>
 
 3. Click "Replace" if prompted.
 
-<figure><img src="../.gitbook/assets/a (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/a (2).PNG" alt=""><figcaption></figcaption></figure>
 
 #### Option 2: Refresh from Power BI Workspace
 
 1. In your Power BI Workspace, click the refresh icon next to the semantic model option.
 
-<figure><img src="../.gitbook/assets/a (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/a (3).PNG" alt=""><figcaption></figcaption></figure>
 
 ### Changing Color Theme
 
@@ -128,19 +128,19 @@ Since the .pbix file is provided, your state can customize the report to match y
 {% step %}
 Open the .pbix file and navigate to the 'View tab'.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 Next, click the 'Themes' dropdown. Then select the 'Customize current theme' option.&#x20;
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 In the pop-up panel, change the primary colors to your state's theme colors and click 'Apply'.&#x20;
 
-<figure><img src="../.gitbook/assets/pic8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pic8.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

@@ -32,13 +32,13 @@ To protect individual privacy, all visuals in the reports have cell sizes under 
 
 #### Adjustable Filters
 
-<figure><img src="../.gitbook/assets/Presentation1.gif" alt=""><figcaption><p>Filters button reveals slicer panel. Slicer selections show in the 'Filters Applied' panel in the top navigation bar. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Presentation1.gif" alt=""><figcaption><p>Filters button reveals slicer panel. Slicer selections show in the 'Filters Applied' panel in the top navigation bar. </p></figcaption></figure>
 
 #### Keyboard Shortcuts
 
 Pressing "Shift + ?" will enable a pop-up that shows several different keyboard shortcuts and accessibility features.
 
-<figure><img src="../.gitbook/assets/Presentation3.gif" alt=""><figcaption><p>Hover over shortcut button to reveal instructions for navigation shortcuts. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Presentation3.gif" alt=""><figcaption><p>Hover over shortcut button to reveal instructions for navigation shortcuts. </p></figcaption></figure>
 
 ## Webinar
 
