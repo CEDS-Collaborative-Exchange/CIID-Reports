@@ -2,6 +2,7 @@
 description: >-
   Get help with installation, troubleshooting, and understanding data from our
   dedicated support teams.
+icon: messages-question
 ---
 
 # Support
@@ -14,7 +15,7 @@ For help with downloading, installing the report and resolving any technical iss
 
 **Email:** [GenerateHelp@aemcorp.com](mailto:GenerateHelp@aemcorp.com)
 
-**Website:** [ciidta.communities.ed.gov](https://ciidta.communities.ed.gov/#program)
+**Website:** [ciidta.org](https://ciidta.org)
 
 ***
 

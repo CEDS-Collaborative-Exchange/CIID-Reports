@@ -1,6 +1,12 @@
+---
+icon: gear
+---
+
 # Setup Guide
 
+{% hint style="warning" %}
 **Privacy Notice:** This report is intended for public release. Please ensure that suppression thresholds and functionality are aligned with your state’s policy and all necessary quality assurance checks and testing are completed prior to publication.
+{% endhint %}
 
 ***
 

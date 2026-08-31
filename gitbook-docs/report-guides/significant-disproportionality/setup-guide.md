@@ -2,6 +2,28 @@
 icon: gear
 cover: ../../.gitbook/assets/SigDisproDashboardScreenshot.png
 coverY: 308.90666666666664
+layout:
+  width: default
+  cover:
+    visible: false
+    size: full
+    mask: none
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Setup Guide
@@ -160,7 +182,7 @@ vwSignificantDisproportionality_Placement
 
 #### Adding the Views
 
-1. Save the provided script views from the [CIID Reports repo](https://github.com/CEDS-Collaborative-Exchange/CIID-Reports/tree/main/01\)%20significant-disproportionality/SQL%20Views):
+1. Save the provided script views from the [CIID Reports repo](../../../01\)%20significant-disproportionality/SQL%20Views):
 
 {% code title="" %}
 ```git
